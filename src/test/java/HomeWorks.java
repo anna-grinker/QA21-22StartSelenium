@@ -79,7 +79,7 @@ public class HomeWorks {
 
         WebElement el13 = wd.findElement(By.cssSelector("[href ='/home']"));
         WebElement el14 = wd.findElement(By.cssSelector("[href ='/about']"));
-        WebElement xElement14 = wd.findElement(By.xpath("//*[@id='/about']"));
+        WebElement xElement14 = wd.findElement(By.xpath("//*[@href='/about']"));
 
         WebElement el15 = wd.findElement(By.cssSelector("[name ='email']"));
         WebElement el16 = wd.findElement(By.cssSelector("[name ='password']"));
@@ -125,7 +125,7 @@ public class HomeWorks {
         List<WebElement> list1 = wd.findElements(By.xpath("//h1/following-sibling::a")); //search from up to down
 
         //preceding-sibling
-        WebElement el8 = wd.findElement(By.xpath("//a[@href='login']/preceding-sibling::h1"));
+        WebElement el8 = wd.findElement(By.xpath("//a[@href='/login']/preceding-sibling::h1"));
         List<WebElement> list2 = wd.findElements(By.xpath("//a[@href='login']/preceding-sibling::a"));
 
     }
